@@ -14,6 +14,8 @@ public class Ui {
     private JTextField productPriceField;
 
     private JButton submitButton;
+    private JButton listeButton;
+
 
     public Ui() {
         frame = new JFrame("Mini Product App");
@@ -43,6 +45,10 @@ public class Ui {
         panel.add(new JLabel()); // empty cell
         panel.add(submitButton);
 
+        listeButton = new JButton("Show liste");
+        panel.add(new JLabel()); // empty cell
+        panel.add(listeButton);
+
         frame.add(panel);
     }
 
@@ -69,6 +75,16 @@ public class Ui {
     public JButton getSubmitButton() {
         return submitButton;
     }
+    public JButton getlisteButton() {
+        return listeButton;
+    }
+    public void clearFields() {
+        userNameField.setText("");
+        userEmailField.setText("");
+        productNameField.setText("");
+        productPriceField.setText("");
+    }
+
 
 public static void main(String[] args) {
     Ui ui = new Ui();

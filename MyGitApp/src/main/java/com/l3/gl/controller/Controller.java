@@ -19,6 +19,7 @@ public class Controller {
         this.view = view;
     }
 
+
     private List<Product>productliste=new ArrayList<>();
     private List<User>Userlist=new ArrayList<>();
 

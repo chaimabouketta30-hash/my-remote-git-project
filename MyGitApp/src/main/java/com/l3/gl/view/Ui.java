@@ -1,6 +1,5 @@
 package com.l3.gl.view;
 
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -19,7 +18,7 @@ public class Ui {
 
 
     public Ui() {
-        frame = new JFrame("Product App");
+        frame = new JFrame("Mini Product App");
         frame.setSize(400, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

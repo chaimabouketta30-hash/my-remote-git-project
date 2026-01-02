@@ -41,12 +41,12 @@ public class Controller {
                 productliste.add(product);
 
                 JOptionPane.showMessageDialog(null,
-                        "User Information:\n" +
-                        "Name: " + user.getName() + "\n" +
-                        "Email: " + user.getEmail() + "\n\n" +
-                        "Product Information:\n" +
-                        "Name: " + product.getName() + "\n" +
-                        "Price: " + product.getPrice()
+                        "user Information:\n" +
+                        "name: " + user.getName() + "\n" +
+                        "email: " + user.getEmail() + "\n\n" +
+                        "product Information:\n" +
+                        "name: " + product.getName() + "\n" +
+                        "price: " + product.getPrice()
                 );
                 view.clearFields();
 
@@ -66,10 +66,10 @@ public class Controller {
 
             StringBuilder message = new StringBuilder("Users & Products List:\n\n");
 
-            message.append("  User     |")
+            message.append("  user     |")
                    .append("  email    |")
-                   .append("  Product  |")
-                   .append("  Price  ")
+                   .append("  product  |")
+                   .append("  price  ")
                    .append("\n--------------------------------------------------------\n");
 
             for (int i = 0; i < productliste.size(); i++) {
@@ -97,10 +97,10 @@ public class Controller {
 
             StringBuilder message = new StringBuilder("Users & Products List:\n\n");
 
-            message.append("  User     |")
+            message.append("  user     |")
                    .append("  email    |")
-                   .append("  Product  |")
-                   .append("  Price  ")
+                   .append("  product  |")
+                   .append("  price  ")
                    .append("\n--------------------------------------------------------\n");
 
             for (int i = 0; i < productliste.size(); i++) {

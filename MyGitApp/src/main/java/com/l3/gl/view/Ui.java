@@ -18,7 +18,7 @@ public class Ui {
 
 
     public Ui() {
-        frame = new JFrame("Mini Product App");
+        frame = new JFrame("Product App");
         frame.setSize(400, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

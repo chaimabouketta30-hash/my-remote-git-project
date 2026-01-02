@@ -88,6 +88,28 @@ public class Controller {
             JOptionPane.showMessageDialog(null, message.toString());
         });
 
+        view.getVlisteButton().addActionListener(e -> {
+
+            if (productliste.isEmpty()||Userlist.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "No products available.");
+                return;
+            }
+
+            StringBuilder message = new StringBuilder("Users & Products List:\n\n");
+
+            message.append("  User     |")
+                   .append("  email    |")
+                   .append("  Product  |")
+                   .append("  Price  ")
+                   .append("\n--------------------------------------------------------\n");
+
+            for (int i = 0; i < productliste.size(); i++) {
+                Userlist.remove(i);
+                productliste.remove(i);
+        
+     }            
+            JOptionPane.showMessageDialog(null, message.toString());
+        });
 
 
 }}

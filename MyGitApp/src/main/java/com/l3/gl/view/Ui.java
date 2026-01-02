@@ -15,6 +15,8 @@ public class Ui {
 
     private JButton submitButton;
     private JButton listeButton;
+    private JButton VlisteButton;
+
 
 
     public Ui() {
@@ -23,7 +25,7 @@ public class Ui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(6, 2, 5, 5));
+        panel.setLayout(new GridLayout(9, 2, 5, 5));
 
         panel.add(new JLabel("User Name:"));
         userNameField = new JTextField();
@@ -48,6 +50,11 @@ public class Ui {
         listeButton = new JButton("Show liste");
         panel.add(new JLabel()); // empty cell
         panel.add(listeButton);
+        
+        VlisteButton = new JButton("Clear liste");
+        panel.add(new JLabel()); // empty cell
+        panel.add(VlisteButton);
+
 
         frame.add(panel);
     }
@@ -77,6 +84,9 @@ public class Ui {
     }
     public JButton getlisteButton() {
         return listeButton;
+    }
+    public JButton getVlisteButton() {
+        return VlisteButton;
     }
     public void clearFields() {
         userNameField.setText("");
